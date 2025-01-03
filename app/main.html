@@ -1,14 +1,77 @@
 <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="ru">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Главная</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интернет-магазин</title>
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
     <script src='main.js'></script>
 </head>
 <body>
-    
+    <header>
+        <div class="logo">
+            <h1>Интернет-магазин</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#products">Товары</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Добро пожаловать в наш интернет-магазин!</h2>
+            <p>У нас широкий ассортимент товаров по приемлемым ценам.</p>
+        </section>
+
+        <section id="products">
+            <h2>Наши товары</h2>
+            <div class="product-list">
+                <div class="product-item">
+                    <img src="product1.jpg" alt="Описание товара 1">
+                    <h3>Товар 1</h3>
+                    <p>Описание товара 1.</p>
+                    <p>Цена: 1000 руб.</p>
+                    <button>Добавить в корзину</button>
+                </div>
+                <div class="product-item">
+                    <img src="product2.jpg" alt="Описание товара 2">
+                    <h3>Товар 2</h3>
+                    <p>Описание товара 2.</p>
+                    <p>Цена: 2000 руб.</p>
+                    <button>Добавить в корзину</button>
+                </div>
+                <div class="product-item">
+                    <img src="product3.jpg" alt="Описание товара 3">
+                    <h3>Товар 3</h3>
+                    <p>Описание товара 3.</p>
+                    <p>Цена: 1500 руб.</p>
+                    <button>Добавить в корзину</button>
+                </div>
+                <!-- Добавьте больше товаров по мере необходимости -->
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>О нас</h2>
+            <p>Мы предлагаем высококачественные товары, которые удовлетворяют ваши потребности.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Контакты</h2>
+            <p>Если у вас есть вопросы, свяжитесь с нами:</p>
+            <p>Email: support@example.com</p>
+            <p>Телефон: +7 (999) 123-45-67</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Интернет-магазин. Все права защищены.</p>
+    </footer>
 </body>
 </html>

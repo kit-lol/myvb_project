@@ -10,30 +10,65 @@ body {
 
 /* Стили заголовка */
 header {
-    background-color: #333;
-    color: #fff;
+    background-image: url("../img/background.jpg");
+    color: #ffffff;
     padding: 10px 0;
     text-align: center;
+    max-height: 190px;
 }
 
-header .logo {
-    font-size: 2em;
+.logo img {
+    max-width: 300px;
+    max-height: 300px;
+    position: relative;
+    right: 550px;
+    top: 40px;
 }
 
 /* Стили навигационного меню */
 nav ul {
     list-style: none;
     padding: 0;
+    position: relative;
+    left: 500px;
+    top: -70px;
 }
 
 nav ul li {
     display: inline;
     margin: 0 15px;
+    position: relative;
+    top: 65px;
 }
 
 nav ul li a {
-    color: #fff;
+    color: #000000;
     text-decoration: none;
+}
+
+* {box-sizing: border-box;}
+form {
+  width: auto;
+
+  margin-right: 30px;
+}
+
+
+input {
+    width: 600px;
+    height: 65px;
+    padding-left: 20px;
+    border-radius: 20px;
+    border: 2px solid #ffffff;
+    background: #ffffff;
+    outline: none;
+    position: relative;
+    transition: .3s linear;
+    left: 14.5px;
+    top: -157px;
+}
+input:focus {
+  width: 610px;
 }
 
 /* Основные стили для главного контента */

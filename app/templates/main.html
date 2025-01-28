@@ -10,9 +10,15 @@
 </head>
 <body>
     <header>
+        <div id="menu-toggle" class="burger-menu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
         <div class="col col--center">
             <a href="main.html" class="logo">
-                <img src="../static/img/logo.png" alt="Grow">
+                <img src="../static/img/logo1.png" alt="WILDZONE">
             </a>
         </div>
         <nav>
@@ -25,6 +31,18 @@
             <input type="text" placeholder="Найти на Wildzone">
         </form>
     </header>
+
+    <div id="overlay" class="overlay"></div> <!-- Затемнение страницы -->
+
+    <div id="sidebar" class="sidebar">
+        <button id="close-menu">Закрыть меню</button>
+        <ul>
+            <li><a href="#">Пункт 1</a></li>
+            <li><a href="#">Пункт 2</a></li>
+            <li><a href="#">Пункт 3</a></li>
+            <li><a href="#">Пункт 4</a></li>
+        </ul>
+    </div>
 
     <main>
         <section id="home">
@@ -74,5 +92,7 @@
     <footer>
         <p>&copy; 2024 Интернет-магазин. Все права защищены.</p>
     </footer>
+
+    <script src="../static/js/script.js"></script>
 </body>
 </html>

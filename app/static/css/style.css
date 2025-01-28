@@ -10,19 +10,22 @@ body {
 
 /* Стили заголовка */
 header {
-    background-image: url("../img/background.jpg");
+    background-color: rgba(110, 0, 188, 0.833);
     color: #ffffff;
     padding: 10px 0;
     text-align: center;
-    max-height: 190px;
+    max-height: 115px;
+    position: relative; /* Позиционирование для наложения */
+    z-index: 10; /* Устанавливаем выше остальных элементов */
 }
 
+/* Стили логотипа */
 .logo img {
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 240px;
+    max-height: 240px;
     position: relative;
-    right: 550px;
-    top: 40px;
+    right: 625px;
+    top: -40px;
 }
 
 /* Стили навигационного меню */
@@ -47,28 +50,29 @@ nav ul li a {
 }
 
 * {box-sizing: border-box;}
+
 form {
   width: auto;
 
   margin-right: 30px;
 }
 
-
+/* Стили для поисковой строки */
 input {
-    width: 600px;
-    height: 65px;
+    font-family: Cambria, sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    width: 930px;
+    height: 60px;
     padding-left: 20px;
-    border-radius: 20px;
+    border-radius: 18px;
     border: 2px solid #ffffff;
     background: #ffffff;
     outline: none;
     position: relative;
     transition: .3s linear;
-    left: 14.5px;
-    top: -157px;
-}
-input:focus {
-  width: 610px;
+    left: 90px;
+    top: -160px;
 }
 
 /* Основные стили для главного контента */
@@ -110,16 +114,15 @@ main {
 
 /* Кнопка добавления в корзину */
 button {
-    background-color: #5cb85c;
+    background-color: #5cb85c00;
     color: white;
-    border: none;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #4cae4c;
+    border: 1px solid rgb(255, 255, 255);
 }
 
 /* Стили для футера */
@@ -131,4 +134,80 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+.burger-menu {
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.3s ease; /* Анимация плавного поворота */
+    position: relative;
+    right: 450px;
+    top: 30px;
+    padding: 11px 13px;
+    border: 1px solid rgba(243, 239, 239, 0.363);
+    border-radius: 15px;
+}
+
+.burger-menu:hover {
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.line {
+    width: 30px;
+    height: 3px;
+    background-color: #ffffff; /* Цвет линий бургера */
+    margin: 5.5px 0; /* Отступы между линиями */
+    transition: all 0.3s ease; /* Плавный переход для анимации */
+}
+
+/* Стиль для смены иконки на крест */
+.burger-menu.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5.5px, 5.5px);
+}
+.burger-menu.active .line:nth-child(2) {
+    opacity: 0; /* Скрыть среднюю линию */
+}
+.burger-menu.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5.5px, -5.5px);
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
+    display: none; /* Изначально скрыто */
+    z-index: 5; /* Под меню, но выше других элементов */
+}
+
+.sidebar {
+    position: fixed;
+    top: 115px;
+    left: -300px; /* Скрыто слева */
+    width: 300px; /* Ширина бокового меню */
+    height: 100%;
+    background-color: white; /* Фон меню */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3); /* Небольшая тень */
+    transition: left 0.4s ease; /* Анимация появления */
+    z-index: 10; /* Над затемнением */
+}
+
+.sidebar.open {
+    left: 0; /* Сдвинуть меню на экран */
+}
+
+button {
+    background-color: #f44336; /* Цвет кнопки закрытия */
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+}
+
+button:hover {
+    background-color: #c62828; /* Темнее при наведении */
 }

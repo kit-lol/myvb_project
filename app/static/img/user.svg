@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="28" height="28">
+  <g>
+    <!-- Круг -->
+    <circle cx="256" cy="128" r="90" fill="white"/> <!-- Радиус уменьшен до 50 -->
+    <!-- Нижняя фигура, смещена вверх, но расстояние увеличено -->
+    <path d="M256,250c-105.99,0.118-191.882,86.01-192,192C64,453.782,73.551,463.333,85.333,463.333h341.333   c11.782,0,21.333-9.551,21.333-21.333C447.882,336.01,361.99,250.118,256,250z" fill="white"/>
+  </g>
+</svg>

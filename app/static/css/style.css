@@ -187,12 +187,96 @@ footer {
     left: 0; /* Сдвинуть меню на экран */
 }
 
-#user_button {
-    background-color: rgba(0, 0, 0, 0.0);
-    border: 0px;
+.user-button-container {
+    display: inline-block; /* Контейнер занимает только необходимую ширину */
     position: relative;
-    top: -180px;
-    left: 400px;
-    height: 50px;
-    width: 50px;
+    left: 675px;
+    top: -200px;
+}
+
+/* Стили для кнопки-ссылки */
+.user-button-link {
+    display: inline-block; /* Чтобы можно было задать размеры */
+    text-decoration: none; /* Убираем подчеркивание у ссылки */
+}
+
+/* Стили для текста под кнопкой */
+.user-button-text {
+    margin-top: -1px; /* Отступ между кнопкой и текстом */
+    font-size: 14px; /* Размер текста */
+    color: #ffffff8d; /* Цвет текста */
+    font-variation-settings: "wght" 450;
+    text-rendering: geometricPrecision;
+    font-family: Hauss, Segoe UI, -apple-system, Roboto, Helvetica Neue, Noto Sans, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-weight: 500;
+    text-align: center; /* Выравнивание текста по центру (опционально) */
+    transition: color 0.3s ease; /* Плавное изменение цвета текста */
+}
+
+/* Изменение цвета текста при наведении на кнопку */
+.user-button-link:hover + .user-button-text {
+    color: #ffffff; /* Новый цвет текста при наведении */
+}
+
+.basket-button-container {
+    display: inline-block; /* Контейнер занимает только необходимую ширину */
+    position: relative;
+    left: 695px;
+    top: -200px;
+}
+
+/* Стили для кнопки-ссылки */
+.basket-button-link {
+    display: inline-block; /* Чтобы можно было задать размеры */
+    text-decoration: none; /* Убираем подчеркивание у ссылки */
+}
+
+/* Стили для текста под кнопкой */
+.basket-button-text {
+    margin-top: -1px; /* Отступ между кнопкой и текстом */
+    font-size: 14px; /* Размер текста */
+    color: #ffffff8d; /* Цвет текста */
+    font-variation-settings: "wght" 450;
+    text-rendering: geometricPrecision;
+    font-family: Hauss, Segoe UI, -apple-system, Roboto, Helvetica Neue, Noto Sans, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-weight: 500;
+    text-align: center; /* Выравнивание текста по центру (опционально) */
+    transition: color 0.3s ease; /* Плавное изменение цвета текста */
+}
+
+/* Изменение цвета текста при наведении на кнопку */
+.basket-button-link:hover + .basket-button-text {
+    color: #ffffff; /* Новый цвет текста при наведении */
+}
+
+
+.addresses-button-container {
+    display: inline-block; /* Контейнер занимает только необходимую ширину */
+    position: relative;
+    left: 500px;
+    top: -200px;
+}
+
+/* Стили для кнопки-ссылки */
+.addresses-button-link {
+    display: inline-block; /* Чтобы можно было задать размеры */
+    text-decoration: none; /* Убираем подчеркивание у ссылки */
+}
+
+/* Стили для текста под кнопкой */
+.addresses-button-text {
+    margin-top: -1px; /* Отступ между кнопкой и текстом */
+    font-size: 14px; /* Размер текста */
+    color: #ffffff8d; /* Цвет текста */
+    font-variation-settings: "wght" 450;
+    text-rendering: geometricPrecision;
+    font-family: Hauss, Segoe UI, -apple-system, Roboto, Helvetica Neue, Noto Sans, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-weight: 500;
+    text-align: center; /* Выравнивание текста по центру (опционально) */
+    transition: color 0.3s ease; /* Плавное изменение цвета текста */
+}
+
+/* Изменение цвета текста при наведении на кнопку */
+.addresses-button-link:hover + .addresses-button-text {
+    color: #ffffff; /* Новый цвет текста при наведении */
 }

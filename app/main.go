@@ -34,12 +34,14 @@ func contacts_page(w http.ResponseWriter, r *http.Request) {
 }
 
 func handleRequest() {
+	fs := http.FileServer(http.Dir("static"))
+	http.Handle("/static/", http.StripPrefix("/static/", fs))
 	http.HandleFunc("/", home_page)
 	http.HandleFunc("/contacts/", contacts_page)
 	http.ListenAndServe(":8080", nil)
 }
 
-func maino() {
+func main() {
 	// var bob User = ..
 	// bob := User{name: "Bob", age: 50, money: -19, avg_grades: 4.2, happiness: 0.8}
 	handleRequest()
